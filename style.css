@@ -338,3 +338,45 @@ button:hover {
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
 
 }
+/* =====================================
+   OPENING
+===================================== */
+
+#opening {
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:1s;
+
+}
+
+
+.overlay h1 {
+
+    font-size:60px;
+
+    font-family:'Great Vibes', cursive;
+
+}
+
+
+.overlay h3 {
+
+    font-size:25px;
+
+}
+
+
+.overlay p {
+
+    font-size:20px;
+
+}
