@@ -40,20 +40,23 @@ if(startBtn){
 // TYPING EFFECT
 // =====================================
 
-new Typed("#typing", {
+if(document.getElementById("typing")){
 
-    strings: [
-        "Untuk Kamu ❤️",
-        "Seseorang Yang Sangat Berarti Bagiku ❤️",
-        "Selamat Ulang Tahun Sayang 🎂"
-    ],
+    new Typed("#typing", {
 
-    typeSpeed:80,
-    backSpeed:40,
-    loop:true
+        strings: [
+            "Untuk Kamu ❤️",
+            "Seseorang Yang Sangat Berarti Bagiku ❤️",
+            "Selamat Ulang Tahun Sayang 🎂"
+        ],
 
-});
+        typeSpeed:80,
+        backSpeed:40,
+        loop:true
 
+    });
+
+}
 
 // =====================================
 // LOVE BUTTON
