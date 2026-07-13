@@ -176,20 +176,6 @@ if(nextReason){
 
 }
 
-    index++;
-
-
-    if(index >= reasons.length){
-
-        index = 0;
-
-    }
-
-
-    reasonText.innerHTML = reasons[index];
-
-
-});
 
 
 // =====================================
@@ -213,20 +199,6 @@ if(giftBox){
     });
 
 }
-
-
-    confetti({
-
-        particleCount:200,
-        spread:150
-
-    });
-
-
-    alert("Hadiah terbesar dalam hidupku adalah bisa mengenal kamu ❤️");
-
-
-});
 
 
 // =====================================
