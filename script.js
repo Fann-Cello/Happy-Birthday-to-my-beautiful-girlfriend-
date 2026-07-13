@@ -6,16 +6,19 @@ const startBtn = document.getElementById("startBtn");
 const bgMusic = document.getElementById("bgMusic");
 
 
-startBtn.addEventListener("click", function(){
+if(startBtn){
 
-    document.getElementById("opening").style.display = "none";
+    startBtn.addEventListener("click", function(){
 
-    bgMusic.play();
+        document.getElementById("opening").style.display = "none";
 
-    createHearts();
+        bgMusic.play();
 
-});
+        createHearts();
 
+    });
+
+}
 
 // =====================================
 // TYPING EFFECT
