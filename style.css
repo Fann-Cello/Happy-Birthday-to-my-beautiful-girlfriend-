@@ -21,7 +21,7 @@ body {
    HERO SECTION
 ===================================== */
 
-.hero {
+#hero {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,12 +30,17 @@ body {
     padding: 20px;
 }
 
-.hero-content h1 {
+#hero .hero-content h1 {
     font-size: 45px;
+    font-family: 'Great Vibes', cursive;
     animation: fadeDown 1.5s ease;
 }
 
-.hero-content p {
+#hero .hero-content h2 {
+    font-size: 35px;
+}
+
+#hero .hero-content p {
     font-size: 20px;
     margin-top: 15px;
     animation: fadeUp 2s ease;
@@ -97,6 +102,30 @@ button:hover {
 
 }
 
+#birthday {
+
+    padding: 80px 20px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.15);
+
+}
+
+
+#birthday h2 {
+
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+
+}
+
+
+#birthday p {
+
+    margin-top: 20px;
+    font-size: 20px;
+
+}
 
 /* =====================================
    LOVE EFFECT
@@ -193,3 +222,79 @@ button:hover {
     }
 
 }
+
+#countdown {
+
+    text-align:center;
+    padding:60px 20px;
+
+}
+
+
+.timer {
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+.timer div {
+
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:20px;
+
+}
+
+
+.timer span {
+
+    font-size:35px;
+    font-weight:bold;
+#gift {
+
+    text-align:center;
+    padding:70px 20px;
+
+}
+
+
+.gift-box {
+
+    font-size:80px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+
+.gift-box:hover {
+
+    transform:scale(1.2) rotate(10deg);
+
+}
+}
+
+#ending {
+
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+
+#ending h1 {
+
+    font-size:50px;
+    font-family:'Great Vibes', cursive;
+
+}
+
+
