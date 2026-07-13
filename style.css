@@ -202,12 +202,11 @@ button:hover {
 
 
 @media(max-width:600px){
-
-    .hero-content h1{
+    #hero .hero-content h1{
         font-size:32px;
     }
 
-    .hero-content p{
+    #hero .hero-content p{
         font-size:17px;
     }
 
@@ -254,6 +253,8 @@ button:hover {
 
     font-size:35px;
     font-weight:bold;
+}
+   
 #gift {
 
     text-align:center;
