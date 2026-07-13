@@ -15,11 +15,22 @@ if(startBtn){
 
     startBtn.addEventListener("click", function(){
 
-        document.getElementById("opening").style.display = "none";
+        const opening = document.getElementById("opening");
+
+        opening.style.opacity = "0";
+
+        setTimeout(function(){
+
+            opening.style.display = "none";
+
+        },1000);
+
 
         bgMusic.play();
 
+
         createHearts();
+
 
     });
 
@@ -259,3 +270,15 @@ function createHearts(){
 
 
 }
+
+// =====================================
+// SCROLL ANIMATION
+// =====================================
+
+AOS.init({
+
+    duration:1000,
+
+    once:true
+
+});
