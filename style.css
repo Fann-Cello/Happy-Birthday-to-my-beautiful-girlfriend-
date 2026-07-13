@@ -1,0 +1,195 @@
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    animation: fadeDown 1.5s ease;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 15px;
+    animation: fadeUp 2s ease;
+}
+
+
+button {
+    margin-top: 25px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff5f7a;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+/* =====================================
+   REASONS SECTION
+===================================== */
+
+#reasons {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#reasons h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+.reason-box {
+
+    max-width: 600px;
+    margin: auto;
+
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+
+    padding: 35px;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+#reasonText {
+
+    font-size: 22px;
+    line-height: 1.6;
+
+}
+
+
+/* =====================================
+   LOVE EFFECT
+===================================== */
+
+.heart {
+
+    position: fixed;
+    bottom: -20px;
+
+    font-size: 25px;
+
+    animation: float 6s linear infinite;
+
+    opacity: 0.8;
+
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+
+
+/* =====================================
+   ANIMATION
+===================================== */
+
+
+@keyframes fadeDown {
+
+    from {
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* =====================================
+   RESPONSIVE MOBILE
+===================================== */
+
+
+@media(max-width:600px){
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content p{
+        font-size:17px;
+    }
+
+
+    #reasons h2{
+        font-size:28px;
+    }
+
+
+    #reasonText{
+        font-size:18px;
+    }
+
+}
