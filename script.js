@@ -45,20 +45,21 @@ new Typed("#typing", {
 
 const loveBtn = document.getElementById("loveBtn");
 
+if(loveBtn){
 
-loveBtn.addEventListener("click", function(){
+    loveBtn.addEventListener("click", function(){
 
-    confetti({
-
-        particleCount:150,
-        spread:100,
-        origin:{
-            y:0.6
-        }
+        confetti({
+            particleCount:150,
+            spread:100,
+            origin:{
+                y:0.6
+            }
+        });
 
     });
 
-});
+}
 
 
 // =====================================
@@ -143,8 +144,21 @@ const reasonText = document.getElementById("reasonText");
 const nextReason = document.getElementById("nextReason");
 
 
-nextReason.addEventListener("click", function(){
+if(nextReason){
 
+    nextReason.addEventListener("click", function(){
+
+        index++;
+
+        if(index >= reasons.length){
+            index = 0;
+        }
+
+        reasonText.innerHTML = reasons[index];
+
+    });
+
+}
 
     index++;
 
@@ -169,7 +183,20 @@ nextReason.addEventListener("click", function(){
 const giftBox = document.getElementById("giftBox");
 
 
-giftBox.addEventListener("click",function(){
+if(giftBox){
+
+    giftBox.addEventListener("click",function(){
+
+        confetti({
+            particleCount:200,
+            spread:150
+        });
+
+        alert("Hadiah terbesar dalam hidupku adalah bisa mengenal kamu ❤️");
+
+    });
+
+}
 
 
     confetti({
